@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>Vaccination</title>
+    <style>
+        #nursepic{
+            margin-top: -10px;
+            float: right;
+            z-index: 1;
+        }
+        #header{
+        margin-top: -10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.712);
+        color: white;
+        height: 100px;
+        align-content: left;
+        position: relative;
+        z-index: 1;
+        }
+        #ntitle{
+            color: blue;
+            font-family: arial;
+            font-weight: bold;
+            margin-left: 90px;
+            font-size: 30px;
+            position: relative;
+            float: left;
+        }
+        #button1{
+            display: inline-block;
+            margin-top: 30px;
+            margin-right: -200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0);
+            border: rgba(100, 148, 237, 0);
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
+            color: rgb(167, 167, 167);
+            font-weight: bold;
+            position: relative;
+            float: right;
+            z-index: 3;
+        }
+        #button2{
+            display: inline-block;
+            margin-top: -70px;
+            margin-right: -310px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0);
+            border: rgba(100, 148, 237, 0);
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
+            color: rgb(167, 167, 167);
+            font-weight: bold;
+            position: relative;
+            float: right;
+            z-index: 3;
+        }
+        #button3{
+            display: inline-block;
+            margin-top: -70px;
+            margin-right: -400px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            background-color: rgba(255, 255, 255, 0);
+            border: rgba(100, 148, 237, 0);
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
+            color: rgb(167, 167, 167);
+            font-weight: bold;
+            position: relative;
+            float: right;
+            z-index: 3;
+        }
+        #bluebutton{
+            margin-top: 30px;
+            margin-right: -600px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            background-color: rgb(55, 87, 213);
+            border: 4px ;
+            box-shadow: 0px 8px 8px #5566ff56;
+            color: rgb(255, 255, 255);
+            position: relative;
+            float: right;
+            z-index: 3;
+        }
+        #pictriang1{
+            padding-left: 30px;
+            position: relative;
+            float: left;
+        }
+        #pictriang2{
+            padding-bottom: 30px;
+            position: relative;
+            float: right;
+        }
+        #pic1{
+            padding-top: 20px;
+            padding-left: 90px;
+            position: relative;
+            float:left
+        }
+        #pic2{
+            padding-top: 20px;
+            padding-left: 30px;
+            position: relative;
+            float:left
+        }
+        #schedulelogo{
+            padding-top: 208px;
+            padding-left: 91px;
+            position: absolute;
+            float:inline-end
+        }
+        #container{
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #content{
+            padding:10px
+        }
+        #Titlemain{
+            padding-top: 70px;
+            padding-left: 90px;
+            font-family: Arial;
+            font-size: 35px;
+            font-weight: bold;
+            float:inline-end;
+            position: relative;
+            color: rgb(30, 61, 113)
+        }
+        #Subtitlemain{
+            padding-left: 100px;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+            float:inline-end;
+            position: relative;
+            color: rgb(179, 180, 180)
+        }
+        #nav{
+            padding-left: 30px;
+            width:150px;
+            position: relative;
+            float:left;
+            font-family: arial;
+            
+        }
+        #nav2{
+            margin-top: 130px;
+            margin-left: 140px;
+            position: relative;
+            float:left;
+            font-family: arial;
+        }
+        #main{
+            padding-left: 20px;
+            width:170px;
+            float:left;
+            font-family: arial;
+
+        }
+        #rectangle{
+        margin-left: 60px;
+        margin-top: 250px;
+        width: 1100px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.918);
+        color: white;
+        height: 140px;
+        position: relative;
+        z-index: 1;
+        border: 4px ;
+        box-shadow: 10px 18px 10px #1b2eda0c;
+        }
+        #rec{
+            color: rgb(170, 170, 170);
+            font-family: arial;
+            margin-left: 20px;
+            margin-top: 0px;
+            font-size: 15px;
+            position: relative;
+            float: left;
+        }
+        #rec1{
+            color: rgb(170, 170, 170);
+            font-family: arial;
+            margin-left: 20px;
+            margin-top: 0px;
+            font-size: 15px;
+            position: relative;
+            float: left;
+        }
+        #rec2{
+            color: rgb(170, 170, 170);
+            font-family: arial;
+            margin-left: 20px;
+            margin-top: 0px;
+            font-size: 15px;
+            position: relative;
+            float: left;
+        }
+        #calendar{
+            margin-top:15px;
+            margin-left:70px;
+            position: relative;
+            float: left;
+        }
+        #ubi{
+            margin-top: 15px;
+            margin-left: 60px;
+            position: relative;
+            float:left
+        }
+        #type{
+            margin-top: 15px;
+            margin-left: 60px;
+            position: relative;
+            float:left;
+        }
+        #location{
+            margin-top: -90px;
+            margin-left: 155px;
+            width: 110px;
+            position: relative;
+            float:left;
+            z-index: 2;
+            border:rgb(255, 255, 255);
+            font-family: arial;
+            color: rgb(30, 61, 113);
+            font-weight: bold;
+        }
+        #start{
+            margin-top: -95px;
+            margin-left: 290px;
+            position: relative;
+            z-index: 2;
+            float: left;
+            border:rgb(255, 255, 255);
+            width: 110px;
+            color: rgb(30, 61, 113);
+            font-weight: bold;
+        }
+        #vtype{
+            margin-top: -92px;
+            margin-left: 460px;
+            position: relative;
+            z-index: 3;
+            float: left;
+            border:rgb(255, 255, 255);
+            width: 110px;
+            color: rgb(30, 61, 113);
+            font-weight: bold;
+        }
+        #submitbutton{
+            margin-top: -40px;
+            margin-left: 550px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            background-color: rgb(55, 87, 213);
+            border: 4px ;
+            box-shadow: 0px 8px 8px #5566ff56;
+            color: rgb(255, 255, 255);
+            position: relative;
+            float: left;
+            z-index: 3;
+        }
+        #vacunaslogos{
+            margin-top: 50px;
+            margin-left: 200px;
+            float: left;
+        }
+        #why{
+            margin-top: 250px;
+            margin-left: 80px;
+            font-family: Arial;
+        }
+        #why2{
+            
+            margin-top: 150px;
+            margin-left:750px;
+            font-family: Arial;
+        }
+        #square{
+        font-family: arial;
+
+        width: 300px;
+        height: 350px;
+        text-align: left;
+        background-color: rgba(252, 252, 252, 0.918);
+        color: rgb(30, 61, 113);
+        position: relative;
+        z-index: 1;
+        border: 4px ;
+        box-shadow: 10px 18px 10px #1b2eda0c;
+        }
+        #squareicons{
+            float: left;
+            position: relative;
+            z-index: 3;
+        }
+        #text{
+            margin-left: 20px;
+        }
+        #desplegable{
+                margin-left: 750px;
+                margin-top: 50px;
+                width: 500px;
+                height: 50px;
+                text-align: left;
+                font-family: arial; 
+                font-weight: bold;
+                font-size: large;
+                background-color: rgba(255, 255, 255, 0.534);
+                color: rgb(11, 56, 153);
+                position: relative;
+                float:left;
+                z-index: 5;
+                border: 4px ;
+                box-shadow: 10px 18px 10px #1b2eda0c;        
+            }
+            #why3{
+            position: relative;
+            float: left;
+            margin-top:250px;
+            margin-left:100px;
+            font-family: Arial;
+        }
+        #square4{
+        font-family: arial;
+        width: 250px;
+        height: 200px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.918);
+        color: rgb(30, 61, 113);
+        position: relative;
+        z-index: 1;
+        border: 4px ;
+        box-shadow: 10px 18px 10px #1b2eda0c;
+        border-color:#f1f5ff;
+        }
+        #buttonf{
+            margin-top: 0px;
+            margin-left: 40px;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            background-color: #f1f5ff;
+            border: 4px ;
+            box-shadow: 0px 8px 8px #5566ff56;
+            color: rgb(55, 87, 213);
+            position: relative;
+            float: left;
+            z-index: 3;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        #buttonf:hover{
+            background-color: #4b3eff;
+            color:#f1f5ff
+        }
+        #footer{
+            margin-top: 1800px;
+            background-color: #f1f5ff;
+            text-align: center;
+            height: 400px;
+            position:relative;
+            z-index: 1;
+        }
+    </style>
+    <body>
+        <div id="container">
+            <div id="nursepic">
+                <img src="nurse1.png" width="700" 
+                height="850">
+            </div>
+            <div id="header">
+                
+                <h1 id="ntitle"><br>Vaccination</h1>
+                <dv>
+                <button id="bluebutton">Hoax Buster</button>
+                </dv>
+                <dv> 
+                <button id="button1">Database</button>
+                </div>
+                <dv>
+                <button id="button2">Education</button>
+                </div>
+                <dv>
+                <button id="button3">News</button>
+                </dv>
+            </div>
+            <div id="pictriang1">
+                <img src="triangulo.png" width="130" height="60">
+            </div>  
+            <div id="Titlemain">
+                <h1>Fight Virus<br>
+                With Vaccines</h1>
+            </div>
+            <div id="Subtitlemain">
+                <p>Let's stop this pandemic by killing the virus <br>
+                with a vaccine, don't let yourself and your<br>
+                family get infected</p>
+
+            </div>
+            <div id="content">
+                <div id="pic1">
+                    <img src="shield.png" width="20" height="20">
+                </div>
+                <div id="nav">
+                    <h3>Best protection</h3>
+                </div>
+                <div id="pictriang2">
+                    <img src="trianguloderecha.png" width="160" height="290">
+                </div>  
+                <div id="pic2">
+                    <img src="estrella.png" width="20" height="20">
+                </div>
+                <div id="main">
+                    <h3>Selected vaccines</h3> 
+                </div>
+                <div id="schedulelogo">
+                    <img src="schedule.png" width="20" height="20">
+                </div>  
+                <div id="nav2">
+                    <h3>Schedule your vaccinations</h3>
+                </div>
+            </div>
+            <div id="rectangle">
+                <img id="ubi" src="ubi.png" width="20" height="20">
+                <h1 id="rec"><br>Location</h1>
+                <img id="calendar" src="calendar.png" width="20" height="20">
+                <h1 id="rec1"><br>Date</h1>
+                <img id="type" src="type.png" width="20" height="20">
+                <h1 id="rec2"><br>Vaccine Type</h1>
+                <button id="submitbutton">Submit</button>
+            </div>
+            <div>
+                <select name="location" id="location">
+                    <option value="cdmx">CDMX</option>
+                    <option value="puebla">Puebla</option>
+                </select>
+                <input type="date" id="start" name="date">
+                <select name="vtype" id="vtype">
+                    <option value="Moderna">Moderna</option>
+                    <option value="Pfizer">Pfizer</option>
+                </select>
+            </div>
+            <br>
+            <div id="vacunaslogos">
+                <img src="aztra.png" width="280" height="100">
+                <img src="zinovac.png" width="280" height="100">
+                <img src="pfizer.png" width="280" height="100">
+                <img src="moderna.png" width="280" height="100">
+            </div>
+            <div id="why">
+                <h1 style="color: rgb(30, 61, 113); font-size: 40px; font-weight: 800">Why should I Vaccine?</h2>
+                <h3 style="color:#6d7b93" >In order to avoid any doubts about getting the covid-19 <br> 
+                vaccine, identify the following 4 benefits of COVID-19 <br> vaccination:</h3>
+            </div>
+            <div id="square" style="margin-left: 80px;
+            margin-top: 200px;">
+            <br><br><br><br><br><br><br>
+                <h2 id="text">Minimize the <br> spread of viruses</h2>
+                <img id="squareicons" src="lista.png" width="50" height="50" style="margin-top:-180px; margin-left: 30px;">
+                <h4 id="text">Vaccine has been  proven <br>
+                effective to prevent someone <br>
+                from getting infected with<br>
+                Coronavirus
+                </h4>
+            </div>
+            <div id="square" style="margin-left: 420px;
+            margin-top: -350px;">
+            <br><br><br><br><br><br><br>
+                <h2 id="text">Forming <br> antibodies</h2>
+                <img id="squareicons"src="escudoazul.png" width="50" height="50" style="margin-top:-180px; margin-left: 30px;">
+                <h4 id="text">COVID-19 vaccine provent to <br>
+                help shape antibody <br>
+                response for immune system<br>
+                 </h4>
+            </div>
+            <div id="square"style="margin-left: 760px;
+            margin-top: -350px;">
+            <br><br><br><br><br><br><br>
+                <h2 id="text">Protecting people nearby</h2>
+                <img id="squareicons" src="personas.png" width="50" height="50" style="margin-top: -180px; margin-left: 40px;">
+                <h4 id="text"> The benefits of COVID-19 <br>
+                    vaccination are the vaccine <br>
+                    that we get can also help<br>
+                    protect people around us
+                     </h4>
+                </div>
+            <div id="square" style="margin-left: 1100px;
+            margin-top: -350px;">
+            <br><br><br><br><br><br><br>
+                <h2 id="text">Creating group immunity</h2>
+                <img id="squareicons" src="aumento.png" width="50" height="50" style="margin-top:-180px; margin-left: 40px;">
+                <h4 id="text">COVID-19 vaccination is also<br>
+                    beneficial for creating group<br>
+                    immunity or herd immunity.<br>     
+            </div>  
+            <div id="why2">
+                <img src="chica.png" style="position:relative; float:left; margin-left: -780px; margin-top: 64px;" width="720" height="750">
+                <h1 style="color: rgb(30, 61, 113); font-size: 40px; font-weight: 800">Preparations Before Vaccine</h2>
+                <h3 style="color:#6d7b93" >
+                the success of vaccines is strongly influenced by the <br> 
+                strength og the body's inmmune system. Therefore, there are <br> 
+                severañ things that can be tried to make the COVID-19  <br>
+                vaccine work:
+            </h3>
+            </div>
+
+            <div>
+            <details>
+                <summary id="desplegable">Avoid Alcoholic beverages</summary>
+            </div>
+            <div>
+            <details>
+                <summary id="desplegable" style="margin-left: 750px; margin-top: 50px;">Avoid stress</summary>    
+            </div>
+            <div>
+                <details>
+                    <summary id="desplegable" style="margin-left: 750px; margin-top: 50px;">Eat healthy food</summary>    
+            </div>
+            <div>
+                <details>
+                    <summary id="desplegable" style="margin-left: 750px; margin-top: 50px;">Get enough sleep</summary>    
+            </div>
+            <div>
+                <details>
+                    <summary id="desplegable" style="margin-left: 750px; margin-top: 50px;">Exercise or physical activity</summary>    
+            </div>
+            <div id="why3">
+                <h1 style="color: rgb(30, 61, 113); font-size: 40px; font-weight: 800">Emergency Contact</h2>
+                <h3 style="color:#6d7b93">Contact one of the contacts below if you or your family feel<br> 
+                unwell and have similar symptoms such as Covid-19, make <br>
+                sure you also take care of yourself before reporting us:</h3>
+            </div>
+            <img style="position:relative; float:left; margin-left: 800px; margin-top: 0px;" src="malenurse.png" width="700px" height="700px">
+            <div id="square4" style="position: relative; float: left; margin-left: 100px; margin-top: -500px;">
+            <br><h2 style="margin-left: 70px;">Call</h2>
+                <h4 style="margin-left: 70px; color: grey;">021.123.145.14</h4>
+                <button id="buttonf"">Call Now</button>
+            </div>   
+            <div id="square4" style="position: relative; float: left; margin-left: 400px; margin-top: -500px;">
+                <br><h2 style="margin-left: 70px;">Chat</h2>
+                    <h4 style="margin-left: 70px; color: grey;">021.123.145.14</h4>
+                    <button id="buttonf"">Chat Now</button>
+            </div>
+            <div id="square4" style="position: relative; float: left; margin-left: 100px; margin-top: -200px;">
+                <br><h2 style="margin-left: 70px; ">Video Call</h2>
+                    <h4 style="margin-left: 70px; color: grey;">021.123.145.14</h4>
+                    <button id="buttonf" style="font-size: small;"">Video Call Now</button>
+            </div>   
+            <div id="square4" style="position: relative; float: left; margin-left: 400px; margin-top: -200px;">
+                <br><h2 style="margin-left: 70px; ">Message</h2>
+                    <h4 style="margin-left: 70px; color: grey;">021.123.145.14</h4>
+                    <button id="buttonf" style="font-size: small;"">Message Now</button>
+            </div>  
+            </body>
+            <div id="footer">
+                <h1 id="ntitle"><br>Vaccination</h1>
+
+            </div>
+            <div>
+            <h3 style="color:#6d7b93; font-family: arial; margin-top: -280px;margin-left: 90px; position: relative; float: left; z-index:3;" >Our goal is to help the <br> 
+             world free from the <br> on going pandemic </h3>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
